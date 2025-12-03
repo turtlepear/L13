@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 
 API_KEY = "CWA-1FFDDAEC-161F-46A3-BE71-93C32C52829F"
-API_URL = "https://opendata.cwa.gov.tw/api/v1/rest/datastore/F-C0032-001"
+API_URL = "http://opendata.cwa.gov.tw/api/v1/rest/datastore/F-C0032-001"
 
 COUNTIES = [
     "宜蘭縣","花蓮縣","臺東縣","澎湖縣","金門縣","連江縣",
@@ -34,7 +34,7 @@ if st.button("顯示折線圖"):
         "sort": "time"
     }
 
-    response = requests.get(API_URL, params=params)
+    response = requests.get(API_URL, params=params, verify=False)
     data = response.json()
 
     # 找資料
@@ -56,3 +56,4 @@ if st.button("顯示折線圖"):
     # 折線圖
     st.subheader(f"{location} - {element_key}（折線圖）")
     st.line_chart(df.set_index("startTime")[element])
+
