@@ -1,6 +1,6 @@
 # 📌 AIOT HW — 中央氣象局資料＋電影爬蟲＋Streamlit 展示
 
-https://dqzusrnbhqcxdufard58qr.streamlit.app/
+demo website : https://dqzusrnbhqcxdufard58qr.streamlit.app/
 
 
 這個專案包含兩個部分：
@@ -32,9 +32,12 @@ https://dqzusrnbhqcxdufard58qr.streamlit.app/
 ## 📂 檔案結構
 
 project/
-│── app.py # Streamlit 主程式
-│── requirement.txt # 套件需求
-│── README.md
+    app.py # Streamlit 主程式
+    requirement.txt # 套件需求
+    README.md
+
+## 結果
+<img width="1624" height="1764" alt="image" src="https://github.com/user-attachments/assets/7b51c7d2-843c-40af-8aff-846116f4efa3" />
 
 
 
@@ -59,10 +62,8 @@ project/
 ## 📂 檔案結構
 
 project/
-
-│── movie.py # 電影爬蟲程式
-
-│── movie.csv # 輸出結果
+    movie.py # 電影爬蟲程式
+    movie.csv # 輸出結果
 
 
 # 📊 movie.csv 欄位說明
@@ -71,3 +72,8 @@ title	電影名稱
 tags	電影類型（用逗號分隔，如 動作,劇情）
 score	評分，例如 8.5
 cover	海報圖片 URL
+
+## 結果
+
+<img width="525" height="1530" alt="image" src="https://github.com/user-attachments/assets/fd8f4960-76a8-40a0-b099-3d5b3b7b0915" />
+
