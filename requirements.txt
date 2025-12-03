@@ -5,6 +5,5 @@ lxml
 pandas
 matplotlib
 sqlalchemy
-sqlite3-binary
 numpy
 plotly
