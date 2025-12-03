@@ -33,7 +33,6 @@ https://dqzusrnbhqcxdufard58qr.streamlit.app/
 
 project/
 │── app.py # Streamlit 主程式
-│── data.db # SQLite 資料庫
 │── requirement.txt # 套件需求
 │── README.md
 
@@ -60,7 +59,9 @@ project/
 ## 📂 檔案結構
 
 project/
+
 │── movie.py # 電影爬蟲程式
+
 │── movie.csv # 輸出結果
 
 
