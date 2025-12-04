@@ -92,7 +92,7 @@ if st.button("取得最新天氣資料"):
         params["elementName"] = selected_elements
 
     try:
-        response = requests.get(API_URL, params=params, timeout=10)
+        response = requests.get(API_URL, params=params, timeout=10, verify=False)
         response.raise_for_status()
     except Exception as e:
         st.error(f"API 錯誤：{e}")
@@ -164,3 +164,4 @@ if st.button("載入歷史資料"):
             )
 
             st.line_chart(chart_data)
+
