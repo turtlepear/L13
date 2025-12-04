@@ -30,9 +30,13 @@ demo website : https://dqzusrnbhqcxdufard58qr.streamlit.app/
 ## 📂 檔案結構
 
 project/
+
     app.py # Streamlit 主程式
+    
     requirement.txt # 套件需求
+    
     weather.db # 資料庫
+    
     README.md
 
 ## 結果
@@ -66,7 +70,9 @@ project/
 ## 📂 檔案結構
 
 project/
+
     movie.py # 電影爬蟲程式
+    
     movie.csv # 輸出結果
 
 
