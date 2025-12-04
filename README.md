@@ -12,7 +12,7 @@ demo website : https://dqzusrnbhqcxdufard58qr.streamlit.app/
 
 1. 呼叫中央氣象局氣象開放資料 API  
 2. 下載 JSON 氣象資料  
-3. 儲存到 SQLite 資料庫 `data.db`  
+3. 儲存到 SQLite 資料庫 `weather.db`  
 4. 在 Streamlit 畫面顯示  
 5. 使用折線圖（matplotlib 或 plotly）視覺化資料  
 
@@ -25,8 +25,6 @@ demo website : https://dqzusrnbhqcxdufard58qr.streamlit.app/
 | JSON 資料來源 | https://opendata.cwa.gov.tw/dataset/forecast/F-C0032-001 |
 | API 直接下載 | http://opendata.cwa.gov.tw/fileapi/v1/opendataapi/F-A0010-001?Authorization=你的API_KEY&format=JSON |
 
-> ⚠ 注意：Streamlit Cloud 可能會遇到 SSL 錯誤，因此本專案改使用 `http://` 避免 verify SSL 造成例外。
-
 ---
 
 ## 📂 檔案結構
@@ -34,10 +32,16 @@ demo website : https://dqzusrnbhqcxdufard58qr.streamlit.app/
 project/
     app.py # Streamlit 主程式
     requirement.txt # 套件需求
+    weather.db # 資料庫
     README.md
 
 ## 結果
-<img width="1624" height="1764" alt="image" src="https://github.com/user-attachments/assets/7b51c7d2-843c-40af-8aff-846116f4efa3" />
+<img width="1198" height="1756" alt="image" src="https://github.com/user-attachments/assets/d5162f9e-d126-4d90-8bc2-f7a5886115a1" />
+
+- weather.db 顯示
+<img width="1459" height="527" alt="image" src="https://github.com/user-attachments/assets/7da47d1f-f1b8-41ec-ba9e-6b6466f64b17" />
+
+
 
 
 
